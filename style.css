@@ -1,0 +1,19 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  
+}
+
+/*Зроби цей сайт красивим 😉*/
+/* YOOO THIS TEXT THINGY COOL AF*/
+.text1{
+    
+}
+
+.big{
+    min-height:10px;
+    display: flex;
+    justify-content:center;
+    background-color: blue;
+    border-radius: 20px;
+}
