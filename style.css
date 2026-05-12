@@ -1,19 +1,159 @@
 body{
-  font-family: sans-serif;
-  margin: 0;
-  
+    font-family: sans-serif;
+    margin: 0;
+
+    background: linear-gradient(lightblue, white);
 }
 
-/*Зроби цей сайт красивим 😉*/
-/* YOOO THIS TEXT THINGY COOL AF*/
+/* HEADER */
+
+header{
+    padding: 40px;
+
+    background: linear-gradient(purple, blue);
+
+    color: white;
+
+    text-align: center;
+}
+
 .text1{
-    
+    width: 80%;
+    margin: auto;
 }
 
 .big{
-    min-height:10px;
     display: flex;
-    justify-content:center;
-    background-color: blue;
+
+    justify-content: center;
+
+    background-color: white;
+
+    color: blue;
+
     border-radius: 20px;
+
+    padding: 15px;
+
+    transition: 0.3s;
+}
+
+.big:hover{
+    transform: scale(1.05);
+}
+
+.under{
+    margin-top: 20px;
+}
+
+/* LIST */
+
+ul{
+    list-style: none;
+
+    padding: 0;
+}
+
+.list-item{
+    background-color: white;
+
+    color: black;
+
+    margin: 10px auto;
+
+    width: 250px;
+
+    padding: 12px;
+
+    border-radius: 15px;
+
+    box-shadow: 2px 2px 10px gray;
+
+    transition: 0.3s;
+}
+
+.list-item:hover{
+    transform: translateX(10px);
+}
+
+/* BUTTON */
+
+.btn{
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 12px 20px;
+
+    background-color: orange;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    background-color: darkorange;
+
+    transform: scale(1.05);
+}
+
+/* MAIN */
+
+main{
+    text-align: center;
+
+    padding: 40px;
+}
+
+.title{
+    color: darkblue;
+}
+
+/* CARDS */
+
+.cards{
+    display: flex;
+
+    justify-content: center;
+
+    gap: 20px;
+
+    flex-wrap: wrap;
+
+    margin-top: 30px;
+}
+
+.card{
+    background-color: white;
+
+    width: 220px;
+
+    padding: 20px;
+
+    border-radius: 20px;
+
+    box-shadow: 3px 3px 10px gray;
+
+    transition: 0.3s;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #222;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
 }
