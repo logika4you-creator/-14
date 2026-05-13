@@ -1,159 +1,116 @@
-body{
-    font-family: sans-serif;
-    margin: 0;
+<!DOCTYPE html>
+<html lang="uk">
 
-    background: linear-gradient(lightblue, white);
-}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
 
-/* HEADER */
+    <link rel="stylesheet" href="style.css">
+</head>
 
-header{
-    padding: 40px;
+<body>
 
-    background: linear-gradient(purple, blue);
+    <!-- HEADER -->
 
-    color: white;
+    <header class="header">
 
-    text-align: center;
-}
+        <div class="container">
 
-.text1{
-    width: 80%;
-    margin: auto;
-}
+            <h1 class="logo">My Hobbies</h1>
 
-.big{
-    display: flex;
+            <nav class="nav">
+                <ul class="menu">
+                    <li><a href="#home">Головна</a></li>
+                    <li><a href="#hobbies">Хобі</a></li>
+                    <li><a href="#why">Чому це важливо</a></li>
+                </ul>
+            </nav>
 
-    justify-content: center;
+        </div>
 
-    background-color: white;
+    </header>
 
-    color: blue;
+    <!-- HERO / INTRO -->
 
-    border-radius: 20px;
+    <section id="home" class="hero">
 
-    padding: 15px;
+        <div class="container hero-box">
 
-    transition: 0.3s;
-}
+            <div class="hero-text">
 
-.big:hover{
-    transform: scale(1.05);
-}
+                <h2>Ласкаво просимо!</h2>
 
-.under{
-    margin-top: 20px;
-}
+                <p>
+                    Це мій перший сайт про хобі.
+                    Тут я показую, що мені подобається робити у вільний час.
+                </p>
 
-/* LIST */
+                <a href="#hobbies" class="btn">Переглянути хобі</a>
 
-ul{
-    list-style: none;
+            </div>
 
-    padding: 0;
-}
+        </div>
 
-.list-item{
-    background-color: white;
+    </section>
 
-    color: black;
+    <!-- LIST + NAVIGATION SKILL -->
 
-    margin: 10px auto;
+    <section id="hobbies" class="section">
 
-    width: 250px;
+        <div class="container">
 
-    padding: 12px;
+            <h2 class="title">Мої хобі</h2>
 
-    border-radius: 15px;
+            <ul class="hobby-list">
+                <li>💻 Програмування</li>
+                <li>🎮 Ігри</li>
+                <li>🎨 Малювання</li>
+            </ul>
 
-    box-shadow: 2px 2px 10px gray;
+        </div>
 
-    transition: 0.3s;
-}
+    </section>
 
-.list-item:hover{
-    transform: translateX(10px);
-}
+    <!-- CARDS -->
 
-/* BUTTON */
+    <section id="why" class="section dark">
 
-.btn{
-    display: inline-block;
+        <div class="container">
 
-    margin-top: 20px;
+            <h2 class="title light">Чому хобі важливі?</h2>
 
-    padding: 12px 20px;
+            <div class="cards">
 
-    background-color: orange;
+                <div class="card">
+                    <h3>Програмування</h3>
+                    <p>Розвиває логіку та дозволяє створювати сайти і ігри.</p>
+                </div>
 
-    color: white;
+                <div class="card">
+                    <h3>Ігри</h3>
+                    <p>Допомагають відпочити та розвивати реакцію.</p>
+                </div>
 
-    text-decoration: none;
+                <div class="card">
+                    <h3>Малювання</h3>
+                    <p>Розвиває творчість та уяву.</p>
+                </div>
 
-    border-radius: 12px;
+            </div>
 
-    transition: 0.3s;
-}
+        </div>
 
-.btn:hover{
-    background-color: darkorange;
+    </section>
 
-    transform: scale(1.05);
-}
+    <!-- FOOTER -->
 
-/* MAIN */
+    <footer class="footer">
 
-main{
-    text-align: center;
+        <p>Мій перший навчальний сайт ✨ 2026</p>
 
-    padding: 40px;
-}
+    </footer>
 
-.title{
-    color: darkblue;
-}
+</body>
 
-/* CARDS */
-
-.cards{
-    display: flex;
-
-    justify-content: center;
-
-    gap: 20px;
-
-    flex-wrap: wrap;
-
-    margin-top: 30px;
-}
-
-.card{
-    background-color: white;
-
-    width: 220px;
-
-    padding: 20px;
-
-    border-radius: 20px;
-
-    box-shadow: 3px 3px 10px gray;
-
-    transition: 0.3s;
-}
-
-.card:hover{
-    transform: scale(1.05);
-}
-
-/* FOOTER */
-
-footer{
-    background-color: #222;
-
-    color: white;
-
-    text-align: center;
-
-    padding: 20px;
-}
+</html>
