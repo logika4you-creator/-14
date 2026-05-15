@@ -1,186 +1,300 @@
+```css id="j8f4ln"
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #222;
-}
 
-/* CONTAINER */
-.container {
-    width: 90%;
-    max-width: 1100px;
-    margin: auto;
-}
+    background-color: #111827;
 
-/* HEADER (sticky + навігація як у справжніх сайтах) */
-.header {
-    position: sticky;
-    top: 0;
-    z-index: 100;
-
-    background: linear-gradient(90deg, #6a11cb, #2575fc);
     color: white;
 
-    padding: 15px 0;
+    margin: 0;
+
+    padding: 0;
 }
 
-.nav-wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* ШАПКА */
+
+.header {
+    background-image:
+    linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1600");
+
+    background-size: cover;
+
+    background-position: center;
+
+    padding: 70px 20px;
+
+    text-align: center;
+
+    border-bottom: 5px solid #7c3aed;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.6);
 }
 
-.logo {
-    font-size: 26px;
+.header-overlay {
+    max-width: 1000px;
+
+    margin: 0 auto;
 }
 
-/* MENU */
+h1 {
+    font-size: 65px;
+
+    margin-bottom: 10px;
+
+    color: #c084fc;
+
+    text-shadow:
+    0 0 10px #7c3aed,
+    0 0 20px #7c3aed,
+    0 0 30px #7c3aed;
+}
+
+.subtitle {
+    font-size: 24px;
+
+    color: #dddddd;
+
+    margin-bottom: 35px;
+}
+
+/* МЕНЮ */
+
 .menu {
     display: flex;
-    gap: 12px;
-    list-style: none;
-    padding: 0;
-    margin: 0;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
 }
 
-.menu a {
-    text-decoration: none;
+.nav-button {
+    background: linear-gradient(135deg, #7c3aed, #4c1d95);
+
     color: white;
-    padding: 10px 14px;
-    border-radius: 8px;
-    background: rgba(255,255,255,0.2);
+
+    padding: 14px 24px;
+
+    text-decoration: none;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    border-radius: 12px;
+
+    border: 2px solid #c084fc;
+
     transition: 0.3s;
+
+    box-shadow: 0 4px 12px rgba(124,58,237,0.4);
 }
 
-.menu a:hover {
-    background: white;
-    color: #2575fc;
+.nav-button:hover {
+    transform: translateY(-3px) scale(1.05);
+
+    background: linear-gradient(135deg, #9d4edd, #6d28d9);
 }
 
 /* HERO */
+
 .hero {
-    padding: 80px 0;
-    background: linear-gradient(180deg, #e3f2fd, #ffffff);
+    max-width: 1100px;
+
+    margin: 40px auto;
+
+    padding: 20px;
 }
 
 .hero-box {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
+
+    justify-content: space-between;
+
+    gap: 40px;
+
     flex-wrap: wrap;
-    gap: 30px;
 }
 
 .hero-text {
-    max-width: 500px;
+    flex: 1;
 }
 
 .hero-text h2 {
-    font-size: 40px;
+    font-size: 42px;
+
+    color: #c084fc;
+}
+
+.hero-text p {
+    font-size: 20px;
+
+    line-height: 1.7;
 }
 
 .hero-image img {
-    width: 350px;
-    border-radius: 15px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    width: 400px;
+
+    max-width: 100%;
+
+    border-radius: 18px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
 }
 
-/* BUTTON */
+/* КНОПКА */
+
 .btn {
     display: inline-block;
-    margin-top: 15px;
-    padding: 12px 18px;
-    background: #2575fc;
+
+    margin-top: 20px;
+
+    background: linear-gradient(135deg, #7c3aed, #4c1d95);
+
     color: white;
+
+    padding: 14px 24px;
+
     text-decoration: none;
-    border-radius: 10px;
+
+    border-radius: 12px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #0d47a1;
+    transform: scale(1.05);
+
+    background: linear-gradient(135deg, #9d4edd, #6d28d9);
 }
 
-/* SECTIONS */
+/* MAIN */
+
+main {
+    max-width: 1100px;
+
+    margin: 0 auto;
+
+    padding: 20px;
+}
+
+/* СЕКЦІЇ */
+
 .section {
-    padding: 70px 0;
+    background-color: #1f2937;
+
+    margin-bottom: 35px;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    border: 2px solid #374151;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
 }
 
-/* LIST */
-.hobby-list {
-    list-style: none;
-    padding: 0;
+.section h2 {
     text-align: center;
-}
 
-.hobby-list li {
-    background: white;
-    margin: 10px auto;
-    padding: 12px;
-    width: 260px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-}
+    font-size: 34px;
 
-/* DARK SECTION */
-.dark {
-    background: #1f1f2e;
-    color: white;
-}
+    color: #c084fc;
 
-/* TITLE */
-.title {
-    text-align: center;
-    font-size: 32px;
     margin-bottom: 30px;
 }
 
-/* CARDS (flexbox) */
+/* КАРТКИ */
+
 .cards {
     display: flex;
+
     justify-content: center;
-    gap: 25px;
+
     flex-wrap: wrap;
 
-    /* ВАЖЛИВО: щоб не прилипали до футера */
-    margin-bottom: 60px;
+    gap: 25px;
 }
 
 .card {
-    width: 240px;
-    background: white;
-    border-radius: 15px;
+    width: 280px;
+
+    background-color: #111827;
+
+    border-radius: 18px;
+
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+
+    border: 2px solid #374151;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-6px);
+    transform: translateY(-6px) scale(1.03);
+
+    border-color: #7c3aed;
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+
+    height: 180px;
+
     object-fit: cover;
 }
 
 .card h3 {
-    margin: 10px 0 5px;
     text-align: center;
+
+    color: #c084fc;
 }
 
 .card p {
-    padding: 0 10px 15px;
     text-align: center;
-    font-size: 14px;
+
+    padding: 0 15px 20px;
+
+    line-height: 1.6;
+}
+
+/* DARK SECTION */
+
+.dark-section {
+    text-align: center;
+}
+
+.dark-section p {
+    font-size: 19px;
+
+    line-height: 1.7;
 }
 
 /* FOOTER */
-.footer {
-    text-align: center;
-    padding: 25px;
-    background: #111;
+
+footer {
+    background-color: black;
+
     color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
     margin-top: 40px;
+
+    border-top: 5px solid #7c3aed;
+
+    font-size: 18px;
 }
+```
