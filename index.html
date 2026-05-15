@@ -1,9 +1,11 @@
+```html id="k7m2qd"
 <!DOCTYPE html>
 <html lang="uk">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>My Hobbies</title>
 
     <link rel="stylesheet" href="style.css">
@@ -11,114 +13,176 @@
 
 <body>
 
-<!-- HEADER / NAVIGATION -->
+    <!-- HEADER -->
 
-<header class="header">
+    <header class="header" id="home">
 
-    <div class="container nav-wrap">
+        <div class="header-overlay">
 
-        <h1 class="logo">My Hobbies</h1>
+            <h1>✨ My Hobbies</h1>
 
-        <nav>
-            <ul class="menu">
-                <li><a href="#home">Головна</a></li>
-                <li><a href="#hobbies">Хобі</a></li>
-                <li><a href="#why">Чому це важливо</a></li>
-                <li><a href="#footer">Контакт</a></li>
-            </ul>
-        </nav>
-
-    </div>
-
-</header>
-
-<!-- HERO -->
-
-<section id="home" class="hero">
-
-    <div class="container hero-box">
-
-        <div class="hero-text">
-
-            <h2>Мій світ хобі</h2>
-
-            <p>
-                Це не просто список занять — це речі, які формують мої навички,
-                характер і творчість.
+            <p class="subtitle">
+                Хобі допомагають розвивати творчість, навички та фантазію
             </p>
 
-            <a href="#hobbies" class="btn">Перейти до хобі</a>
+            <nav class="menu">
+
+                <a href="#home" class="nav-button">
+                    Головна
+                </a>
+
+                <a href="#hobbies" class="nav-button">
+                    Хобі
+                </a>
+
+                <a href="#why" class="nav-button">
+                    Чому важливо
+                </a>
+
+                <a href="#footer" class="nav-button">
+                    Контакт
+                </a>
+
+            </nav>
 
         </div>
 
-        <div class="hero-image">
-            <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/code-1869236_1280.jpg" alt="Coding">
-        </div>
+    </header>
 
-    </div>
+    <!-- HERO -->
 
-</section>
+    <section class="hero">
 
-<!-- HOBBIES LIST -->
+        <div class="hero-box">
 
-<section id="hobbies" class="section">
+            <div class="hero-text">
 
-    <div class="container">
+                <h2>
+                    Мій світ хобі
+                </h2>
 
-        <h2 class="title">Мої хобі</h2>
+                <p>
+                    Хобі — це не просто розваги.
+                    Вони допомагають вчитися новому,
+                    розвивати фантазію
+                    та цікаво проводити час.
+                </p>
 
-        <ul class="hobby-list">
-            <li>💻 Програмування</li>
-            <li>🎮 Ігри</li>
-            <li>🎨 Малювання</li>
-        </ul>
+                <a href="#hobbies" class="btn">
+                    Перейти до хобі
+                </a>
 
-    </div>
-
-</section>
-
-<!-- CARDS -->
-
-<section id="why" class="section dark">
-
-    <div class="container">
-
-        <h2 class="title light">Чому хобі важливі?</h2>
-
-        <div class="cards">
-
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/programming-593312_1280.jpg" alt="">
-                <h3>Програмування</h3>
-                <p>Розвиває логіку та дає змогу створювати сайти і ігри.</p>
             </div>
 
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/controller-1869820_1280.jpg" alt="">
-                <h3>Ігри</h3>
-                <p>Допомагають відпочити та тренують реакцію.</p>
-            </div>
+            <div class="hero-image">
 
-            <div class="card">
-                <img src="https://cdn.pixabay.com/photo/2017/01/30/13/49/pencil-2026479_1280.jpg" alt="">
-                <h3>Малювання</h3>
-                <p>Розвиває уяву та креативність.</p>
+                <img src="https://cdn.pixabay.com/photo/2016/11/29/05/08/code-1869236_1280.jpg">
+
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- HOBBIES -->
 
-<!-- FOOTER -->
+    <main>
 
-<footer id="footer" class="footer">
+        <section id="hobbies" class="section">
 
-    <p>Сайт створено Боледзюком Устимом ✨ 2026</p>
+            <h2>
+                Мої хобі
+            </h2>
 
-</footer>
+            <div class="cards">
+
+                <div class="card">
+
+                    <img src="https://cdn.pixabay.com/photo/2015/01/08/18/24/programming-593312_1280.jpg">
+
+                    <h3>
+                        💻 Програмування
+                    </h3>
+
+                    <p>
+                        Я люблю створювати сайти,
+                        ігри та вивчати нові технології.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="https://cdn.pixabay.com/photo/2016/11/29/03/53/controller-1869820_1280.jpg">
+
+                    <h3>
+                        🎮 Ігри
+                    </h3>
+
+                    <p>
+                        Ігри допомагають відпочивати
+                        та тренують реакцію.
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <img src="https://cdn.pixabay.com/photo/2017/01/30/13/49/pencil-2026479_1280.jpg">
+
+                    <h3>
+                        🎨 Малювання
+                    </h3>
+
+                    <p>
+                        Малювання розвиває уяву,
+                        творчість та креативність.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- WHY -->
+
+        <section id="why" class="section dark-section">
+
+            <h2>
+                Чому хобі важливі?
+            </h2>
+
+            <p>
+                Хобі допомагають людині
+                ставати кращою,
+                розвивати здібності
+                та знаходити нових друзів.
+            </p>
+
+            <p>
+                Кожне хобі вчить чомусь новому:
+                логіці,
+                терпінню,
+                творчості
+                або роботі в команді.
+            </p>
+
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer id="footer">
+
+        <p>
+            ✨ Сайт створено Боледзюком Устимом | 2026
+        </p>
+
+    </footer>
 
 </body>
 
 </html>
+```
